@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contend %}
+
+<section class="bg-blue-700 my-6 px-6 py-4">
+    <h2 class="text-center">Create Post</h2>
+    <form action="/createpost" method="post" class="my-4">
+        <input type="text" name="title" placeholder="Task Title" class="px-4 py-2 text-gray-900">
+        <input type="text" name="description" placeholder="Task Description" class="px-4 py-2 text-gray-900">
+        <button type="submit" class="py-2 px-4 bg-blue-900">Create Post</button>
+    </form>
+</section>
+
+{% endblock%}

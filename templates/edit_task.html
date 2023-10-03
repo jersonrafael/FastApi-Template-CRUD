@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contend %}
+
+<section class="bg-blue-700 my-6 px-6 py-4">
+    <h2 class="text-center">Edit Post</h2>
+    <form action="/edit_task/{{find_task.id}}" method="post" class="my-4" >
+        <input type="text" name="title" value="{{find_task.title}}" class="px-4 py-2 text-gray-900">
+        <input type="text" name="description" value="{{find_task.description}}" class="px-4 py-2 text-gray-900">
+        <button type="submit" class="py-2 px-4 bg-green-900">Edit Task</button>
+    </form>
+</section>
+
+{% endblock%}
